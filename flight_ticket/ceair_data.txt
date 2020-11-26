@@ -1,0 +1,11 @@
+cond.monthOffSet: 0
+cond.depCode: CAN
+cond.arrCode: SHA
+cond.depCityCode: CAN
+cond.arrCityCode: SHA
+cond.deptAirport:
+cond.arrAirport:
+cond.trip: OW
+cond.goDt:
+cond.depDate: 2020 - 06 - 19
+cond.currency: CNY

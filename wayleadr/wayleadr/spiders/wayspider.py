@@ -39,7 +39,7 @@ class WayspiderSpider(scrapy.Spider):
         for i in result:
             if "Unavailable" in i:
                 count = count + 1
-        if count != 0:
+        if count != 100:
             html1 = etree.HTML(response.text)
             token = html1.xpath('//meta[@name="csrf-token"]/@content')[0]
             # response.body.decode(response.encoding)
@@ -58,12 +58,12 @@ class WayspiderSpider(scrapy.Spider):
         html1 = etree.HTML(response.text)
         token = html1.xpath('//meta[@name="csrf-token"]/@content')[0]
         data = {'authenticity_token': token,
-                'booking_request[date_range]':'09/24/2023',
-                'booking_request[start_time]':'2023-09-24 01:00:00 -0700',
-                'booking_request[end_time]':'2023-09-24 23:30:00 -0700',
+                'booking_request[date_range]':'07/11/2024',
+                'booking_request[start_time]':'2024-07-11 01:00:00 -0700',
+                'booking_request[end_time]':'2024-07-11 23:30:00 -0700',
                 'booking_request[preferred_zone_id]':'1499',
-                'booking_request[vehicle_plate]': '45618',
-                'booking_request[instant_booking]':'false',
+                'booking_request[vehicle_plate]': 'DH49M02',
+                'booking_request[instant_booking]':'true',
                 'booking_request[booking_request_method]':'instant',
                 'commit': 'Book Now!',
                 'for_user': ''}

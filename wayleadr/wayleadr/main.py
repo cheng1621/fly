@@ -7,8 +7,6 @@ import sys
 import requests
 
 if __name__ == '__main__':
-    while True:
-        time.strftime("%H:%M:%S")
-        os.system('scrapy crawl wayspider')
-        time.sleep(3)
+    time.strftime("%H:%M:%S")
+    os.system('scrapy crawl wayspider')
 
